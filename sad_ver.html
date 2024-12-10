@@ -6,5 +6,15 @@
 </head>
 <body>
     <audio id="audio" src="슬픈징글벨2.mp3" preload="auto" autoplay></audio>
+
+    <script>
+        var audio = document.getElementById('audio');
+
+        // 자동 재생 시도
+        audio.play().catch(function(error) {
+            console.log('자동 재생 실패:', error);
+            alert('오디오 재생이 실패했습니다.'); // 사용자에게 알림
+        });
+    </script>
 </body>
 </html>
