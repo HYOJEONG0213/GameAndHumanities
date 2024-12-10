@@ -6,16 +6,8 @@
     <title>오디오 재생</title>
 </head>
 <body>
-    <audio id="audio" src="슬픈징글벨2.mp3" preload="auto"></audio>
-    <button id="playButton">오디오 재생</button>
-
-    <script>
-        document.getElementById('playButton').onclick = function() {
-            var audio = document.getElementById('audio');
-            audio.play().catch(function(error) {
-                console.log('오디오 재생 실패', error);
-            });
-        };
-    </script>
+    <h1>오디오 재생</h1>
+    <!-- iframe에 자동재생 권한을 허용 -->
+    <iframe src="https://hyojeong0213.github.io/GameAndHumanities/audio.html" allow="autoplay" width="300" height="100" frameborder="0"></iframe>
 </body>
 </html>
